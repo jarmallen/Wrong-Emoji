@@ -13,6 +13,10 @@
 		FA19C1951B66E2AF0094A656 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA19C1941B66E2AF0094A656 /* Images.xcassets */; };
 		FA19C1981B66E2AF0094A656 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA19C1961B66E2AF0094A656 /* LaunchScreen.xib */; };
 		FA19C1A41B66E2AF0094A656 /* Wrong_EmojiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19C1A31B66E2AF0094A656 /* Wrong_EmojiTests.swift */; };
+		FA19C1B61B66E3E30094A656 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19C1B51B66E3E30094A656 /* KeyboardViewController.swift */; };
+		FA19C1B91B66E3E30094A656 /* Wrong Emoji Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FA19C1B11B66E3E30094A656 /* Wrong Emoji Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FA19C1BF1B66E4770094A656 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA19C1BE1B66E4770094A656 /* KeyboardView.xib */; };
+		FA6096241BB3671300CA468F /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19C1B51B66E3E30094A656 /* KeyboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +27,28 @@
 			remoteGlobalIDString = FA19C1871B66E2AF0094A656;
 			remoteInfo = "Wrong Emoji";
 		};
+		FA19C1B71B66E3E30094A656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA19C1801B66E2AF0094A656 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA19C1B01B66E3E30094A656;
+			remoteInfo = "Wrong Emoji Keyboard";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA19C1BD1B66E3E40094A656 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FA19C1B91B66E3E30094A656 /* Wrong Emoji Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA19C1881B66E2AF0094A656 /* Wrong Emoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wrong Emoji.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +61,10 @@
 		FA19C19D1B66E2AF0094A656 /* Wrong EmojiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wrong EmojiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA19C1A21B66E2AF0094A656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA19C1A31B66E2AF0094A656 /* Wrong_EmojiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrong_EmojiTests.swift; sourceTree = "<group>"; };
+		FA19C1B11B66E3E30094A656 /* Wrong Emoji Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Wrong Emoji Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA19C1B41B66E3E30094A656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA19C1B51B66E3E30094A656 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		FA19C1BE1B66E4770094A656 /* KeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +82,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA19C1AE1B66E3E30094A656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +97,7 @@
 			children = (
 				FA19C18A1B66E2AF0094A656 /* Wrong Emoji */,
 				FA19C1A01B66E2AF0094A656 /* Wrong EmojiTests */,
+				FA19C1B21B66E3E30094A656 /* Wrong Emoji Keyboard */,
 				FA19C1891B66E2AF0094A656 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +107,7 @@
 			children = (
 				FA19C1881B66E2AF0094A656 /* Wrong Emoji.app */,
 				FA19C19D1B66E2AF0094A656 /* Wrong EmojiTests.xctest */,
+				FA19C1B11B66E3E30094A656 /* Wrong Emoji Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +150,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FA19C1B21B66E3E30094A656 /* Wrong Emoji Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FA19C1B51B66E3E30094A656 /* KeyboardViewController.swift */,
+				FA19C1B31B66E3E30094A656 /* Supporting Files */,
+			);
+			path = "Wrong Emoji Keyboard";
+			sourceTree = "<group>";
+		};
+		FA19C1B31B66E3E30094A656 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA19C1BE1B66E4770094A656 /* KeyboardView.xib */,
+				FA19C1B41B66E3E30094A656 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +178,12 @@
 				FA19C1841B66E2AF0094A656 /* Sources */,
 				FA19C1851B66E2AF0094A656 /* Frameworks */,
 				FA19C1861B66E2AF0094A656 /* Resources */,
+				FA19C1BD1B66E3E40094A656 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FA19C1B81B66E3E30094A656 /* PBXTargetDependency */,
 			);
 			name = "Wrong Emoji";
 			productName = "Wrong Emoji";
@@ -150,12 +208,31 @@
 			productReference = FA19C19D1B66E2AF0094A656 /* Wrong EmojiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		FA19C1B01B66E3E30094A656 /* Wrong Emoji Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA19C1BA1B66E3E40094A656 /* Build configuration list for PBXNativeTarget "Wrong Emoji Keyboard" */;
+			buildPhases = (
+				FA19C1AD1B66E3E30094A656 /* Sources */,
+				FA19C1AE1B66E3E30094A656 /* Frameworks */,
+				FA19C1AF1B66E3E30094A656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wrong Emoji Keyboard";
+			productName = "Wrong Emoji Keyboard";
+			productReference = FA19C1B11B66E3E30094A656 /* Wrong Emoji Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		FA19C1801B66E2AF0094A656 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Jared Allen";
 				TargetAttributes = {
@@ -165,6 +242,9 @@
 					FA19C19C1B66E2AF0094A656 = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = FA19C1871B66E2AF0094A656;
+					};
+					FA19C1B01B66E3E30094A656 = {
+						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
 			};
@@ -183,6 +263,7 @@
 			targets = (
 				FA19C1871B66E2AF0094A656 /* Wrong Emoji */,
 				FA19C19C1B66E2AF0094A656 /* Wrong EmojiTests */,
+				FA19C1B01B66E3E30094A656 /* Wrong Emoji Keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +286,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA19C1AF1B66E3E30094A656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA19C1BF1B66E4770094A656 /* KeyboardView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -213,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA19C1901B66E2AF0094A656 /* ViewController.swift in Sources */,
+				FA6096241BB3671300CA468F /* KeyboardViewController.swift in Sources */,
 				FA19C18E1B66E2AF0094A656 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +315,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA19C1AD1B66E3E30094A656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA19C1B61B66E3E30094A656 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +330,11 @@
 			isa = PBXTargetDependency;
 			target = FA19C1871B66E2AF0094A656 /* Wrong Emoji */;
 			targetProxy = FA19C19E1B66E2AF0094A656 /* PBXContainerItemProxy */;
+		};
+		FA19C1B81B66E3E30094A656 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA19C1B01B66E3E30094A656 /* Wrong Emoji Keyboard */;
+			targetProxy = FA19C1B71B66E3E30094A656 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -390,6 +493,32 @@
 			};
 			name = Release;
 		};
+		FA19C1BB1B66E3E40094A656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Wrong Emoji Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FA19C1BC1B66E3E40094A656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Wrong Emoji Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -409,6 +538,7 @@
 				FA19C1A91B66E2AF0094A656 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA19C1AA1B66E2AF0094A656 /* Build configuration list for PBXNativeTarget "Wrong EmojiTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +547,16 @@
 				FA19C1AC1B66E2AF0094A656 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA19C1BA1B66E3E40094A656 /* Build configuration list for PBXNativeTarget "Wrong Emoji Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA19C1BB1B66E3E40094A656 /* Debug */,
+				FA19C1BC1B66E3E40094A656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
